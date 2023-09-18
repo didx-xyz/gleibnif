@@ -1,0 +1,26 @@
+name: scala-steward
+on:
+  push:
+    branches: [ master ]
+  schedule:
+  - cron: '0 6 * * *'
+  workflow_dispatch:
+jobs:
+  scala-steward:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: ${{ github.repository_owner == 'didx-xyz' }}
+    steps:
+    - name: Generate token
+      id: generate_token
+      uses: tibdex/github-app-token@v2
+      with:
+        app_id: 89659
+        private_key: ${{ secrets.BOT_KEY }} # todo
+    - name: Launch Scala Steward
+      uses: scala-steward-org/scala-steward-action@v2.61.0
+      with:
+        github-token: ${{ steps.generate_token.outputs.token }}
+        author-email: "bot[bot]@users.noreply.github.com" #todo
+        author-name: scala-steward[bot]
+        branches: master
