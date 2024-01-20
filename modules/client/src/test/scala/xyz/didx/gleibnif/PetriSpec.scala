@@ -127,7 +127,7 @@ class PetriSpec extends CatsEffectSuite {
       PetriPrinter(fileName = "petrinet3", petriNet = cpn).print(Option(p2)),
       println("p2 = " + cpn.peek(Step(p2, 3))),
       //  println(s"p2 state = ${p2.state} \n=> ${p2.serialize} \n=> ${p2.serialize}"),
-      PetriPrinter(fileName = "petrinet4", petriNet = cpn).print(Option(p3)),
+      PetriPrinter(fileName = "petrinet4", petriNet = cpn).print(Option(p3))
       //  println(s"p1 state = ${p1.state} \n=> ${p1.serialize} \n=> ${p1.serialize}"),
 
     )
