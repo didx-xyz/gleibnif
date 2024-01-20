@@ -148,7 +148,7 @@ lazy val core = project
       "com.apicatalog"         % "titanium-json-ld" % titaniumVersion,
       "org.glassfish"          % "jakarta.json"     % "2.0.1",
       "com.google.crypto.tink" % "tink"             % tinkVersion,
-      "com.google.crypto.tink" % "tink-awskms"      % "1.8.0"
+      "com.google.crypto.tink" % "tink-awskms"      % "1.9.1"
     )
   )
 
