@@ -1,0 +1,49 @@
+name: Scala CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "master"
+  pull_request:
+    branches:
+      - "master"
+
+concurrency:
+  group: scala-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compile:
+    name: Compile
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Caching dependencies for faster build
+      - name: Cache SBT
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.ivy2/cache
+            ~/.sbt
+            ~/.coursier
+          key: ${{ runner.os }}-sbt-${{ hashFiles('**/build.sbt') }}
+          restore-keys: |
+            ${{ runner.os }}-sbt-
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: "zulu"
+
+      - name: Compile with SBT
+        run: sbt compile
+
+      - name: Check Scala formatting with Scalafmt
+        run: sbt scalafmtCheckAll
+
+      - name: Check import organization
+        run: sbt "scalafix --check OrganizeImports"
