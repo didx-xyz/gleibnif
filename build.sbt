@@ -139,6 +139,7 @@ ThisBuild /githubRepository := "gleibnif" */
 lazy val root = project
   .in(file("."))
   .aggregate(core, protocol, client, server)
+  .settings(scalafixSettings)
   .settings(
     publish / skip       := true,
     publishConfiguration := publishConfiguration.value.withOverwrite(true),
@@ -148,6 +149,7 @@ lazy val root = project
 
 lazy val core = project
   .in(file("modules/core"))
+  .settings(scalafixSettings)
   .settings(commonSettings: _*)
   .settings(
     name             := "gleibnifCore",
@@ -170,6 +172,7 @@ lazy val core = project
 
 lazy val protocol = project
   .in(file("modules/protocol"))
+  .settings(scalafixSettings)
   .settings(
     name        := "gleibnifProtocol",
     description := "Protobuf definitions",
@@ -186,6 +189,7 @@ lazy val protocol = project
 
 lazy val client = project
   .in(file("modules/client"))
+  .settings(scalafixSettings)
   .settings(
     name                := "gleibnifClient",
     description         := "Protobuf Client",
@@ -234,6 +238,7 @@ lazy val client = project
 
 lazy val server = project
   .in(file("modules/server"))
+  .settings(scalafixSettings)
   .settings(commonSettings: _*)
   .settings(grpcSettings: _*)
   .settings(
@@ -263,3 +268,5 @@ lazy val server = project
   )
   .dependsOn(protocol)
   .dependsOn(protocol % "protobuf")
+
+lazy val scalafixSettings = Seq(semanticdbEnabled := true)
