@@ -50,7 +50,7 @@ lazy val commonSettings = Seq(
     "org.scodec"                    %% "scodec-bits"             % scodecVersion,
     "org.scala-lang"                %% "scala3-staging"          % Scala3,
     "io.circe"                      %% "circe-yaml"              % "0.14.2",
-    "dev.mn8"                       %% "castanet"                % castanetVersion,
+    "xyz.didx"                      %% "castanet"                % castanetVersion,
     "org.typelevel"                 %% "cats-core"               % catsVersion,
     "org.typelevel"                 %% "cats-effect"             % ceVersion,
     "org.bouncycastle"               % "bcpkix-jdk15on"          % bouncyCastleVersion,
@@ -108,9 +108,9 @@ lazy val grpcSettings = Seq(
 ThisBuild / version           := "0.0.1"
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-ThisBuild / organization         := "dev.mn8"
-ThisBuild / organizationName     := "MN8 Technology ÖU"
-ThisBuild / organizationHomepage := Some(url("https://mn8.dev"))
+ThisBuild / organization         := "xyz.didx"
+ThisBuild / organizationName     := "DIDx"
+ThisBuild / organizationHomepage := Some(url("https://www.didx.co.za/"))
 Global / scalaVersion            := Scala3
 
 /*
@@ -189,7 +189,7 @@ lazy val client = project
   .settings(
     name                := "gleibnifClient",
     description         := "Protobuf Client",
-    Compile / mainClass := Some("dev.mn8.gleibnif.Main"),
+    Compile / mainClass := Some("xyz.didx.gleibnif.Main"),
     resolvers ++= Seq(
       Resolver.mavenLocal,
       "jitpack" at "https://jitpack.io",
@@ -241,9 +241,9 @@ lazy val server = project
     name         := "gleibnifServer",
     description  := "Protobuf Server",
     // nativeImageVersion := "21.2.0",
-    Compile / mainClass := Some("dev.mn8.gleibnif.Main"),
+    Compile / mainClass := Some("xyz.didx.gleibnif.Main"),
     libraryDependencies ++= List(
-      "dev.mn8"       %% "castanet"          % castanetVersion,
+      "xyz.didx"      %% "castanet"          % castanetVersion,
       "org.typelevel" %% "cats-core"         % catsVersion,
       "co.fs2"        %% "fs2-core"          % fs2Version,
       "co.fs2"        %% "fs2-io"            % fs2Version,

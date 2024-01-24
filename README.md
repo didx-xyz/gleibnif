@@ -1,4 +1,4 @@
-# MN8.Dev
+# DIDx
 
 ## Draft - Product Description and Specification
 
