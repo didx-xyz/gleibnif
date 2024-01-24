@@ -35,7 +35,7 @@ lazy val xebiaVersion        = "0.0.3"
 
 lazy val commonSettings = Seq(
   resolvers ++= Seq(
-    "github" at "https://maven.pkg.github.com/iandebeer",
+    "github" at "https://maven.pkg.github.com/didx-xyz",
     Resolver.mavenLocal,
     "jitpack" at "https://jitpack.io",
     "snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
@@ -130,11 +130,13 @@ ThisBuild / developers := List(
     email = "ian@mn8.ee",
     url = url("https://mn8.dev")
   )
-)
+)*/
 
-ThisBuild /  githubOwner := "iandebeer"
-ThisBuild /githubRepository := "gleibnif" */
-//ThisBuild / githubTokenSource := TokenSource.GitConfig("github.token")// || TokenSource.Environment("GITHUB_TOKEN")
+ThisBuild / githubOwner      := "didx-xyz"
+ThisBuild / githubRepository := "gleibnif"
+ThisBuild / githubTokenSource := TokenSource.GitConfig(
+  "github.token"
+) // || TokenSource.Environment("GITHUB_TOKEN")
 
 lazy val root = project
   .in(file("."))
