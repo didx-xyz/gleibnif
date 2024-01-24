@@ -16,4 +16,4 @@ addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.11.1")
 
 // addSbtPlugin("org.scalablytyped.converter" % "sbt-converter" % "1.0.0-beta42")
 
-//addSbtPlugin("com.codecommit" % "sbt-github-packages" % "0.5.3")
+addSbtPlugin("com.codecommit" % "sbt-github-packages" % "0.5.3")
