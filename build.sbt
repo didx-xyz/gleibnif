@@ -35,7 +35,7 @@ lazy val xebiaVersion        = "0.0.3"
 
 lazy val commonSettings = Seq(
   resolvers ++= Seq(
-    "github" at "https://maven.pkg.github.com/iandebeer",
+    "github" at "https://maven.pkg.github.com/didx-xyz",
     Resolver.mavenLocal,
     "jitpack" at "https://jitpack.io",
     "snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
@@ -59,7 +59,6 @@ lazy val commonSettings = Seq(
     "com.github.ipfs"                % "java-ipfs-http-client"   % ipfsVersion,
     "com.github.pureconfig"         %% "pureconfig-core"         % pureconfigVersion,
     "com.github.pureconfig"         %% "pureconfig-cats-effect"  % pureconfigVersion,
-    "eu.timepit"                    %% "refined-pureconfig"      % refinedVersion,
     "dev.profunktor"                %% "redis4cats-effects"      % redis4catsVersion,
     "dev.profunktor"                %% "redis4cats-log4cats"     % redis4catsVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-core"              % tapirVersion,
@@ -113,32 +112,16 @@ ThisBuild / organizationName     := "DIDx"
 ThisBuild / organizationHomepage := Some(url("https://www.didx.co.za/"))
 Global / scalaVersion            := Scala3
 
-/*
-ThisBuild / scmInfo := Some(
-  ScmInfo(
-    url("https://github.com/iandebeer/gleibnif"),
-    "scm:git@github.iandebeer/gleibnif.git"
-  )
+ThisBuild / githubOwner      := "didx-xyz"
+ThisBuild / githubRepository := "gleibnif"
+githubTokenSource := TokenSource.GitConfig("github.token") || TokenSource.Environment(
+  "GITHUB_TOKEN"
 )
-
-Global / onChangedBuildSource := ReloadOnSourceChanges
-
-ThisBuild / developers := List(
-  Developer(
-    id = "iandebeer",
-    name = "Ian de Beer",
-    email = "ian@mn8.ee",
-    url = url("https://mn8.dev")
-  )
-)
-
-ThisBuild /  githubOwner := "iandebeer"
-ThisBuild /githubRepository := "gleibnif" */
-//ThisBuild / githubTokenSource := TokenSource.GitConfig("github.token")// || TokenSource.Environment("GITHUB_TOKEN")
 
 lazy val root = project
   .in(file("."))
   .aggregate(core, protocol, client, server)
+  .settings(scalafixSettings)
   .settings(
     publish / skip       := true,
     publishConfiguration := publishConfiguration.value.withOverwrite(true),
@@ -148,6 +131,7 @@ lazy val root = project
 
 lazy val core = project
   .in(file("modules/core"))
+  .settings(scalafixSettings)
   .settings(commonSettings: _*)
   .settings(
     name             := "gleibnifCore",
@@ -170,6 +154,7 @@ lazy val core = project
 
 lazy val protocol = project
   .in(file("modules/protocol"))
+  .settings(scalafixSettings)
   .settings(
     name        := "gleibnifProtocol",
     description := "Protobuf definitions",
@@ -186,6 +171,7 @@ lazy val protocol = project
 
 lazy val client = project
   .in(file("modules/client"))
+  .settings(scalafixSettings)
   .settings(
     name                := "gleibnifClient",
     description         := "Protobuf Client",
@@ -234,6 +220,7 @@ lazy val client = project
 
 lazy val server = project
   .in(file("modules/server"))
+  .settings(scalafixSettings)
   .settings(commonSettings: _*)
   .settings(grpcSettings: _*)
   .settings(
@@ -263,3 +250,5 @@ lazy val server = project
   )
   .dependsOn(protocol)
   .dependsOn(protocol % "protobuf")
+
+lazy val scalafixSettings = Seq(semanticdbEnabled := true)
