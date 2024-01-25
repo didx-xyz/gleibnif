@@ -41,11 +41,11 @@ jobs:
           java-version: 17
           distribution: "zulu"
 
-      - name: Compile with SBT
-        run: sbt compile
-
       - name: Check Scala formatting with Scalafmt
         run: sbt scalafmtCheckAll
 
       - name: Check import organization
         run: sbt "scalafix --check OrganizeImports"
+
+      - name: Compile with SBT
+        run: sbt compile
