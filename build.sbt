@@ -59,7 +59,6 @@ lazy val commonSettings = Seq(
     "com.github.ipfs"                % "java-ipfs-http-client"   % ipfsVersion,
     "com.github.pureconfig"         %% "pureconfig-core"         % pureconfigVersion,
     "com.github.pureconfig"         %% "pureconfig-cats-effect"  % pureconfigVersion,
-    "eu.timepit"                    %% "refined-pureconfig"      % refinedVersion,
     "dev.profunktor"                %% "redis4cats-effects"      % redis4catsVersion,
     "dev.profunktor"                %% "redis4cats-log4cats"     % redis4catsVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-core"              % tapirVersion,
