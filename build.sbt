@@ -112,25 +112,6 @@ ThisBuild / organizationName     := "DIDx"
 ThisBuild / organizationHomepage := Some(url("https://www.didx.co.za/"))
 Global / scalaVersion            := Scala3
 
-/*
-ThisBuild / scmInfo := Some(
-  ScmInfo(
-    url("https://github.com/iandebeer/gleibnif"),
-    "scm:git@github.iandebeer/gleibnif.git"
-  )
-)
-
-Global / onChangedBuildSource := ReloadOnSourceChanges
-
-ThisBuild / developers := List(
-  Developer(
-    id = "iandebeer",
-    name = "Ian de Beer",
-    email = "ian@mn8.ee",
-    url = url("https://mn8.dev")
-  )
-)*/
-
 ThisBuild / githubOwner      := "didx-xyz"
 ThisBuild / githubRepository := "gleibnif"
 githubTokenSource := TokenSource.GitConfig("github.token") || TokenSource.Environment(
