@@ -134,9 +134,9 @@ ThisBuild / developers := List(
 
 ThisBuild / githubOwner      := "didx-xyz"
 ThisBuild / githubRepository := "gleibnif"
-ThisBuild / githubTokenSource := TokenSource.GitConfig(
-  "github.token"
-) // || TokenSource.Environment("GITHUB_TOKEN")
+githubTokenSource := TokenSource.GitConfig("github.token") || TokenSource.Environment(
+  "GITHUB_TOKEN"
+)
 
 lazy val root = project
   .in(file("."))
