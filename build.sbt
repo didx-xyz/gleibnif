@@ -15,7 +15,7 @@ lazy val sttpVersion         = "3.8.16"
 lazy val tinkVersion         = "1.12.0"
 lazy val redis4catsVersion   = "1.4.3"
 lazy val openAIVersion       = "0.4.1"
-lazy val bouncyCastleVersion = "1.70"
+lazy val bouncyCastleVersion = "1.77"
 lazy val titaniumVersion     = "1.3.3"
 lazy val munitVersion        = "1.0.0-M8"
 lazy val munitCEVersion      = "1.0.7"
@@ -53,7 +53,7 @@ lazy val commonSettings = Seq(
     "xyz.didx"                      %% "castanet"                % castanetVersion,
     "org.typelevel"                 %% "cats-core"               % catsVersion,
     "org.typelevel"                 %% "cats-effect"             % ceVersion,
-    "org.bouncycastle"               % "bcpkix-jdk15on"          % bouncyCastleVersion,
+    "org.bouncycastle"               % "bcpkix-jdk18on"          % bouncyCastleVersion,
     "org.typelevel"                 %% "log4cats-core"           % log4catsVersion,
     "org.typelevel"                 %% "log4cats-slf4j"          % log4catsVersion,
     "com.github.ipfs"                % "java-ipfs-http-client"   % ipfsVersion,
