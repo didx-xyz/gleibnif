@@ -1,35 +1,35 @@
-lazy val Scala3              = "3.3.0"
+lazy val Scala3              = "3.3.1"
 lazy val Scala213            = "2.13.6"
-lazy val catsVersion         = "2.9.0"
-lazy val ceVersion           = "3.5.1"
-lazy val fs2Version          = "3.8.0"
-lazy val circeVersion        = "0.14.5"
-lazy val grpcVersion         = "1.57.1"
-lazy val googleProtoVersion  = "3.23.4"
+lazy val catsVersion         = "2.10.0"
+lazy val ceVersion           = "3.5.3"
+lazy val fs2Version          = "3.9.4"
+lazy val circeVersion        = "0.14.6"
+lazy val grpcVersion         = "1.57.2"
+lazy val googleProtoVersion  = "3.25.2"
 lazy val monocleVersion      = "3.1.0"
-lazy val scodecVersion       = "1.1.37"
+lazy val scodecVersion       = "1.1.38"
 lazy val junitVersion        = "0.11"
 lazy val castanetVersion     = "0.1.10"
 lazy val didCommVersion      = "0.3.2"
-lazy val sttpVersion         = "3.8.16"
-lazy val tinkVersion         = "1.10.0"
-lazy val redis4catsVersion   = "1.4.3"
-lazy val openAIVersion       = "0.4.1"
-lazy val bouncyCastleVersion = "1.70"
-lazy val titaniumVersion     = "1.3.2"
-lazy val munitVersion        = "1.0.0-M8"
+lazy val sttpVersion         = "3.9.2"
+lazy val tinkVersion         = "1.12.0"
+lazy val redis4catsVersion   = "1.5.2"
+lazy val openAIVersion       = "0.5.0"
+lazy val bouncyCastleVersion = "1.77"
+lazy val titaniumVersion     = "1.3.3"
+lazy val munitVersion        = "1.0.0-M10"
 lazy val munitCEVersion      = "1.0.7"
-lazy val pureconfigVersion   = "0.17.4"
+lazy val pureconfigVersion   = "0.17.5"
 lazy val ipfsVersion         = "1.4.4"
 lazy val log4catsVersion     = "2.6.0"
-lazy val logbackVersion      = "1.4.8"
+lazy val logbackVersion      = "1.4.14"
 lazy val slf4jVersion        = "1.7.36"
-lazy val shapelessVersion    = "3.3.0"
-lazy val passkitVersion      = "0.3.4-SNAPSHOT"
+lazy val shapelessVersion    = "3.4.1"
+lazy val passkitVersion      = "0.3.4"
 lazy val tapirVersion        = "1.9.6"
-lazy val http4sVersion       = "0.23.23"
+lazy val http4sVersion       = "0.23.25"
 lazy val refinedVersion      = "0.11.0"
-lazy val emilVersion         = "0.14.0"
+lazy val emilVersion         = "0.15.0"
 lazy val xebiaVersion        = "0.0.3"
 //lazy val didCommonVersion = "1.0.0"
 
@@ -53,7 +53,7 @@ lazy val commonSettings = Seq(
     "xyz.didx"                      %% "castanet"                % castanetVersion,
     "org.typelevel"                 %% "cats-core"               % catsVersion,
     "org.typelevel"                 %% "cats-effect"             % ceVersion,
-    "org.bouncycastle"               % "bcpkix-jdk15on"          % bouncyCastleVersion,
+    "org.bouncycastle"               % "bcpkix-jdk18on"          % bouncyCastleVersion,
     "org.typelevel"                 %% "log4cats-core"           % log4catsVersion,
     "org.typelevel"                 %% "log4cats-slf4j"          % log4catsVersion,
     "com.github.ipfs"                % "java-ipfs-http-client"   % ipfsVersion,
@@ -71,9 +71,9 @@ lazy val commonSettings = Seq(
     "com.github.eikek"              %% "emil-common"             % emilVersion,
     "com.github.eikek"              %% "emil-javamail"           % emilVersion,
     "com.softwaremill.sttp.client3" %% "core"                    % sttpVersion,
-    "com.softwaremill.sttp.apispec" %% "apispec-model"           % "0.6.0",
-    "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml"      % "0.6.0",
-    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.15",
+    "com.softwaremill.sttp.apispec" %% "apispec-model"           % "0.6.3",
+    "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml"      % "0.6.3",
+    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.16",
     "org.http4s"                    %% "http4s-dsl"              % http4sVersion,
     "ch.qos.logback"                 % "logback-classic"         % logbackVersion,
     "com.xebia"                     %% "xef-scala"               % xebiaVersion,
@@ -148,7 +148,7 @@ lazy val core = project
       "com.apicatalog"         % "titanium-json-ld" % titaniumVersion,
       "org.glassfish"          % "jakarta.json"     % "2.0.1",
       "com.google.crypto.tink" % "tink"             % tinkVersion,
-      "com.google.crypto.tink" % "tink-awskms"      % "1.8.0"
+      "com.google.crypto.tink" % "tink-awskms"      % "1.9.1"
     )
   )
 
