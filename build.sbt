@@ -1,4 +1,4 @@
-lazy val Scala3              = "3.3.0"
+lazy val Scala3              = "3.3.1"
 lazy val Scala213            = "2.13.6"
 lazy val catsVersion         = "2.9.0"
 lazy val ceVersion           = "3.5.1"
