@@ -73,7 +73,7 @@ lazy val commonSettings = Seq(
     "com.softwaremill.sttp.client3" %% "core"                    % sttpVersion,
     "com.softwaremill.sttp.apispec" %% "apispec-model"           % "0.6.3",
     "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml"      % "0.6.3",
-    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.15",
+    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.16",
     "org.http4s"                    %% "http4s-dsl"              % http4sVersion,
     "ch.qos.logback"                 % "logback-classic"         % logbackVersion,
     "com.xebia"                     %% "xef-scala"               % xebiaVersion,
