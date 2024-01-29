@@ -29,7 +29,7 @@ lazy val passkitVersion      = "0.3.4"
 lazy val tapirVersion        = "1.6.4"
 lazy val http4sVersion       = "0.23.25"
 lazy val refinedVersion      = "0.11.0"
-lazy val emilVersion         = "0.15.0"
+lazy val emilVersion         = "0.16.1"
 lazy val xebiaVersion        = "0.0.3"
 //lazy val didCommonVersion = "1.0.0"
 
