@@ -18,7 +18,7 @@ lazy val openAIVersion       = "0.5.0"
 lazy val bouncyCastleVersion = "1.77"
 lazy val titaniumVersion     = "1.3.3"
 lazy val munitVersion        = "1.0.0-M11"
-lazy val munitCEVersion      = "1.0.7"
+lazy val munitCEVersion      = "2.0.0-M4"
 lazy val pureconfigVersion   = "0.17.5"
 lazy val ipfsVersion         = "1.4.4"
 lazy val log4catsVersion     = "2.6.0"
@@ -31,7 +31,6 @@ lazy val http4sVersion       = "0.23.25"
 lazy val refinedVersion      = "0.11.0"
 lazy val emilVersion         = "0.16.1"
 lazy val xebiaVersion        = "0.0.3"
-//lazy val didCommonVersion = "1.0.0"
 
 lazy val commonSettings = Seq(
   resolvers ++= Seq(
@@ -42,7 +41,6 @@ lazy val commonSettings = Seq(
     "releases" at "https://oss.sonatype.org/content/repositories/releases"
   ),
   libraryDependencies ++= Seq(
-    // m "org.scala-lang" %% "scala3-staging" % Scala3,
     "org.typelevel"                 %% "cats-core"               % catsVersion,
     "co.fs2"                        %% "fs2-core"                % fs2Version,
     "co.fs2"                        %% "fs2-io"                  % fs2Version,
@@ -76,18 +74,15 @@ lazy val commonSettings = Seq(
     "org.http4s"                    %% "http4s-blaze-server"     % "0.23.16",
     "org.http4s"                    %% "http4s-dsl"              % http4sVersion,
     "ch.qos.logback"                 % "logback-classic"         % logbackVersion,
+    "org.scalameta"                 %% "munit"                   % munitVersion   % Test,
+    "org.scalameta"                 %% "munit-scalacheck"        % munitVersion   % Test,
+    "org.typelevel"                 %% "munit-cats-effect"       % munitCEVersion % Test,
     "com.xebia"                     %% "xef-scala"               % xebiaVersion,
-    "com.xebia"                      % "xef-pdf"                 % xebiaVersion % "runtime",
+    "com.xebia"                      % "xef-pdf"                 % xebiaVersion   % "runtime",
     "com.xebia"                      % "xef-reasoning-jvm"       % xebiaVersion,
-    "com.xebia" % "xef-openai" % xebiaVersion % "runtime" pomOnly (),
-    // "org.slf4j" % "slf4j-api" % slf4jVersion,
-    // "org.slf4j" % "slf4j-nop" % slf4jVersion ,
-    "org.scalameta" %% "munit"               % munitVersion   % Test,
-    "org.scalameta" %% "munit-scalacheck"    % munitVersion   % Test,
-    "org.typelevel" %% "munit-cats-effect-3" % munitCEVersion % Test
+    "com.xebia" % "xef-openai" % xebiaVersion % "runtime" pomOnly ()
   ),
   libraryDependencies ++= Seq(
-    // "io.circe" %% "circe-yaml",
     "io.circe" %% "circe-core",
     "io.circe" %% "circe-generic",
     "io.circe" %% "circe-parser"
@@ -143,7 +138,6 @@ lazy val core = project
     ),
     // crossScalaVersions := List(scala3, scala212),
     libraryDependencies ++= Seq(
-      //   "org.scala-lang" %% "scala3-staging" % Scala3,
       "org.didcommx"           % "didcomm"          % didCommVersion,
       "com.apicatalog"         % "titanium-json-ld" % titaniumVersion,
       "org.glassfish"          % "jakarta.json"     % "2.0.1",
@@ -183,14 +177,7 @@ lazy val client = project
       "releases" at "https://oss.sonatype.org/content/repositories/releases"
     ),
     libraryDependencies ++= Seq(
-      /*
-      <groupId>com.github.kenglxn.QRGen</groupId>
-            <artifactId>javase</artifactId>
-            <version>3.0.1</version>
-       */
       "com.github.kenglxn.QRGen" % "javase" % "3.0.1",
-      //  "org.scala-lang" %% "scala3-staging" % Scala3,
-      // "decentralized-identity" % "did-common-java" % didCommonVersion,
       "com.softwaremill.sttp.client3" %% "core"                           % sttpVersion,
       "com.softwaremill.sttp.client3" %% "circe"                          % sttpVersion,
       "com.softwaremill.sttp.client3" %% "cats"                           % sttpVersion,
