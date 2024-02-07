@@ -62,7 +62,7 @@ lazy val commonSettings = Seq(
     "com.softwaremill.sttp.tapir"   %% "tapir-core"              % tapirVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-http4s-server"     % tapirVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-json-circe"        % tapirVersion,
-    "com.softwaremill.sttp.tapir"   %% "tapir-sttp-stub-server"  % tapirVersion % Test,
+    "com.softwaremill.sttp.tapir"   %% "tapir-sttp-stub-server"  % tapirVersion   % Test,
     "com.softwaremill.sttp.tapir"   %% "tapir-swagger-ui-bundle" % tapirVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-openapi-docs"      % tapirVersion,
     "com.softwaremill.sttp.tapir"   %% "tapir-asyncapi-docs"     % tapirVersion,
@@ -177,7 +177,7 @@ lazy val client = project
       "releases" at "https://oss.sonatype.org/content/repositories/releases"
     ),
     libraryDependencies ++= Seq(
-      "com.github.kenglxn.QRGen" % "javase" % "3.0.1",
+      "com.github.kenglxn.QRGen"       % "javase"                         % "3.0.1",
       "com.softwaremill.sttp.client3" %% "core"                           % sttpVersion,
       "com.softwaremill.sttp.client3" %% "circe"                          % sttpVersion,
       "com.softwaremill.sttp.client3" %% "cats"                           % sttpVersion,
