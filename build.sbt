@@ -1,5 +1,4 @@
 lazy val Scala3   = "3.3.1"
-lazy val Scala213 = "2.13.8"
 
 Global / scalaVersion         := Scala3
 Global / onChangedBuildSource := ReloadOnSourceChanges
@@ -137,7 +136,6 @@ lazy val core = project
       Resolver.mavenLocal,
       "google" at "https://maven.google.com/"
     ),
-    // crossScalaVersions := List(scala3, scala212),
     libraryDependencies ++= Seq(
       "org.didcommx"           % "didcomm"          % didCommVersion,
       "com.apicatalog"         % "titanium-json-ld" % titaniumVersion,
