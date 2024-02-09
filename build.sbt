@@ -1,4 +1,4 @@
-lazy val Scala3   = "3.3.1"
+lazy val Scala3 = "3.3.1"
 
 Global / scalaVersion         := Scala3
 Global / onChangedBuildSource := ReloadOnSourceChanges
@@ -50,7 +50,7 @@ lazy val pureconfigVersion   = "0.17.5"
 lazy val redis4catsVersion   = "1.5.2"
 lazy val scodecVersion       = "1.1.38"
 lazy val shapelessVersion    = "3.4.1"
-lazy val sttpVersion         = "3.9.2"
+lazy val sttpVersion         = "3.9.3"
 lazy val sttpApispecVersion  = "0.6.3"
 lazy val tapirVersion        = "1.6.4"
 lazy val tinkVersion         = "1.12.0"
