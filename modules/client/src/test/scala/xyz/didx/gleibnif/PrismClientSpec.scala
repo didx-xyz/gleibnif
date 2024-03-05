@@ -1,15 +1,15 @@
 package xyz.didx.gleibnif
 
 import cats.effect._
-import io.circe.*
-import io.circe.generic.auto.*
-import io.circe.parser.*
-import io.circe.syntax.*
+import io.circe._
+import io.circe.generic.auto._
+import io.circe.parser._
+import io.circe.syntax._
 import munit.CatsEffectSuite
-import munit.*
-import sttp.client3.*
+import munit._
+import sttp.client3._
 import sttp.client3.asynchttpclient.cats.AsyncHttpClientCatsBackend
-import sttp.client3.circe.*
+import sttp.client3.circe._
 import xyz.didx.gleibnif.prism.CreateDIDResponse
 import xyz.didx.gleibnif.prism.DocumentTemplate
 import xyz.didx.gleibnif.prism.PrismClient

@@ -1,31 +1,31 @@
 package xyz.didx.gleibnif.dawn
 
-import cats.*
+import cats._
 import cats.effect._
 import cats.implicits._
 import cats.implicits.catsSyntaxApplicativeId
-import cats.syntax.all.*
-import com.xebia.functional.xef.scala.conversation.*
+import cats.syntax.all._
+import com.xebia.functional.xef.scala.conversation._
 import dev.profunktor.redis4cats.Redis
 import dev.profunktor.redis4cats.RedisCommands
 import dev.profunktor.redis4cats.effect.Log.Stdout._
 import io.circe.Decoder.Result
-import io.circe.*
-import io.circe.parser.*
-import io.circe.syntax.*
+import io.circe._
+import io.circe.parser._
+import io.circe.syntax._
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 import sttp.client3.SttpBackend
 import xyz.didx.gleibnif.connection.RedisStorage
 import xyz.didx.gleibnif.didcomm.DID
-import xyz.didx.gleibnif.didcomm.DIDTypes.*
+import xyz.didx.gleibnif.didcomm.DIDTypes._
 import xyz.didx.gleibnif.openai.OpenAIAgent
 import xyz.didx.gleibnif.signal.SignalBot
-import xyz.didx.gleibnif.signal.*
+import xyz.didx.gleibnif.signal._
 import xyz.didx.gleibnif.signal.messages.SignalSimpleMessage
 
-import java.time.*
-import scala.deriving.*
+import java.time._
+import scala.deriving._
 
 object Aspects {
   opaque type Location  = String

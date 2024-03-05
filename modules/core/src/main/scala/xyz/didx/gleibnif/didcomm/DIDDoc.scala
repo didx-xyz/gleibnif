@@ -2,7 +2,7 @@ package xyz.didx.gleibnif.didcomm
 
 //import org.didcommx.didcomm.common.VerificationMaterial
 //import org.didcommx.didcomm.common.VerificationMethodType
-import io.circe.*
+import io.circe._
 import io.circe.syntax._
 import org.didcommx.didcomm.exceptions.DIDDocException
 import org.didcommx.didcomm.exceptions.DIDUrlNotFoundException

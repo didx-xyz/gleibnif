@@ -10,7 +10,7 @@ import sttp.client3.SttpBackend
 import sttp.client3.asynchttpclient.cats.AsyncHttpClientCatsBackend
 import xyz.didx.gleibnif.ConversationPollingHandler
 
-import scala.concurrent.duration.*
+import scala.concurrent.duration._
 
 object Main extends IOApp.Simple:
   // override protected def blockedThreadDetectionEnabled = true

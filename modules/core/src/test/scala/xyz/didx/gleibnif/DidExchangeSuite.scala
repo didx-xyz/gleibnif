@@ -1,10 +1,10 @@
 package xyz.didx.gleibnif
 
 import cats.effect.IO
-import munit.Assertions.*
+import munit.Assertions._
 import munit.CatsEffectSuite
 import munit.FunSuite
-import xyz.didx.gleibnif.didcomm.*
+import xyz.didx.gleibnif.didcomm._
 
 class DidExchangeSuite extends CatsEffectSuite {
 

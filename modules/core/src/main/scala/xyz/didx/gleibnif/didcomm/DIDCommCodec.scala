@@ -1,12 +1,12 @@
 package xyz.didx.gleibnif.didcomm
 
-import cats.*
+import cats._
 import cats.implicits.catsSyntaxApplicativeId
-import cats.syntax.all.*
+import cats.syntax.all._
 import io.circe.Decoder.Result
-import io.circe.*
-import io.circe.parser.*
-import io.circe.syntax.*
+import io.circe._
+import io.circe.parser._
+import io.circe.syntax._
 import xyz.didx.gleibnif.didcomm.DIDCommAttachment
 import xyz.didx.gleibnif.didcomm.DIDCommData
 import xyz.didx.gleibnif.didcomm.DIDCommMessage

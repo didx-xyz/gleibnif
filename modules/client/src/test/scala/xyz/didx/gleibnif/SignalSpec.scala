@@ -7,7 +7,7 @@ import io.circe.parser._
 import io.circe.syntax._
 import munit.FunSuite
 import xyz.didx.gleibnif.openai.OpenAIAgent
-import xyz.didx.gleibnif.signal.*
+import xyz.didx.gleibnif.signal._
 import xyz.didx.gleibnif.signal.messages.Member
 import xyz.didx.gleibnif.signal.messages.SignalMessageCodec.memberDecoder
 import xyz.didx.gleibnif.signal.messages.SignalSimpleMessage

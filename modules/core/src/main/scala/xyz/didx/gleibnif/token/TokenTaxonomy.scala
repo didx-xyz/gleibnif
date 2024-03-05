@@ -3,7 +3,7 @@ package xyz.didx.gleibnif
 import scodec.bits._
 
 import scala.math._
-import scala.quoted.*
+import scala.quoted._
 
 object TokenTaxonomy:
   enum Behaviour:

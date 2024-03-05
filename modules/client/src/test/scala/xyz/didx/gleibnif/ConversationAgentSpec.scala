@@ -4,8 +4,8 @@ import cats.effect.IO
 import cats.effect.kernel.Resource
 import com.xebia.functional.xef.conversation.llm.openai.OpenAI
 import com.xebia.functional.xef.prompt.Prompt
-import com.xebia.functional.xef.reasoning.pdf.*
-import com.xebia.functional.xef.scala.conversation.*
+import com.xebia.functional.xef.reasoning.pdf._
+import com.xebia.functional.xef.scala.conversation._
 import dev.profunktor.redis4cats.Redis
 import dev.profunktor.redis4cats.RedisCommands
 import io.circe.Decoder
@@ -13,7 +13,7 @@ import io.circe.syntax._
 import munit.CatsEffectSuite
 import xyz.didx.gleibnif.connection.RedisStorage
 import xyz.didx.gleibnif.didcomm.DID
-import xyz.didx.gleibnif.didcomm.DIDTypes.*
+import xyz.didx.gleibnif.didcomm.DIDTypes._
 
 import scala.concurrent.duration.Duration
 

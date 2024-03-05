@@ -1,10 +1,10 @@
 package xyz.didx.gleibnif
 
-import io.circe.*
-import io.circe.parser.*
-import io.circe.syntax.*
-import munit.*
-import sttp.client3.*
+import io.circe._
+import io.circe.parser._
+import io.circe.syntax._
+import munit._
+import sttp.client3._
 import xyz.didx.gleibnif.DWNodeCodec.decodeDWNodeMessage
 import xyz.didx.gleibnif.DWNodeCodec.encodeDWNodeMessage
 import xyz.didx.gleibnif.didcomm.DIDCommCodec

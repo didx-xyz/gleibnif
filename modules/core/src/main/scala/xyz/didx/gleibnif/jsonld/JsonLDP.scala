@@ -4,7 +4,7 @@ import com.apicatalog.jsonld.JsonLd
 import com.apicatalog.jsonld.document.JsonDocument
 import io.circe.Json
 import io.circe.ParsingFailure
-import io.circe.parser.*
+import io.circe.parser._
 
 import java.io.Reader
 import java.io.StringReader
@@ -12,8 +12,8 @@ import java.net.URI
 import java.net.URL
 import scala.io.Codec
 import scala.io.Source
-import scala.jdk.CollectionConverters.*
-import scala.jdk.OptionConverters.*
+import scala.jdk.CollectionConverters._
+import scala.jdk.OptionConverters._
 
 trait JsonLD:
   def expand(): Either[ParsingFailure, JsonLD]

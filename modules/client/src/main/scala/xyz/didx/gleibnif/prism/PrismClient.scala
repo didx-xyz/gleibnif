@@ -1,18 +1,18 @@
 package xyz.didx.gleibnif.prism
 import cats.effect.IO
-import cats.implicits.*
-import io.circe.*
-import io.circe.generic.auto.*
-import io.circe.parser.*
-import io.circe.syntax.*
+import cats.implicits._
+import io.circe._
+import io.circe.generic.auto._
+import io.circe.parser._
+import io.circe.syntax._
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
-import pureconfig.*
-import pureconfig.generic.derivation.default.*
+import pureconfig._
+import pureconfig.generic.derivation.default._
 import sttp.client3.ResponseException
 import sttp.client3.UriContext
-import sttp.client3.*
-import sttp.client3.circe.*
+import sttp.client3._
+import sttp.client3.circe._
 import sttp.model.StatusCode
 import sttp.model.Uri
 

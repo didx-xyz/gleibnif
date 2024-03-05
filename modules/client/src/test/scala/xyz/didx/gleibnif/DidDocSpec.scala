@@ -4,11 +4,11 @@ import cats.effect.IO
 import cats.effect.unsafe.implicits._
 import com.apicatalog.jsonld.JsonLd
 import com.apicatalog.jsonld.document.JsonDocument
-import io.circe.*
-import io.circe.parser.*
-import io.circe.syntax.*
-import munit.*
-import sttp.client3.*
+import io.circe._
+import io.circe.parser._
+import io.circe.syntax._
+import munit._
+import sttp.client3._
 import xyz.didx.gleibnif.didcomm.DIDCodec
 import xyz.didx.gleibnif.didcomm.DIDCodec.decodeDIDDoc
 import xyz.didx.gleibnif.didcomm.DIDCodec.encodeDIDDoc
@@ -20,8 +20,8 @@ import xyz.didx.gleibnif.jsonld.JsonLDP
 import java.io.Reader
 import java.io.StringReader
 import java.net.URI
-import scala.jdk.CollectionConverters.*
-import scala.jdk.OptionConverters.*
+import scala.jdk.CollectionConverters._
+import scala.jdk.OptionConverters._
 
 class DidDocSpec extends FunSuite {
 

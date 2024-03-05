@@ -1,10 +1,10 @@
 package xyz.didx.gleibnif
 
 import cats.effect.IO
-import io.circe.*
-import io.circe.parser.*
-import sttp.client3.*
-import sttp.client3.circe.*
+import io.circe._
+import io.circe.parser._
+import sttp.client3._
+import sttp.client3.circe._
 import xyz.didx.gleibnif.didcomm.DIDCodec
 import xyz.didx.gleibnif.didcomm.DIDCodec.decodeDIDDoc
 import xyz.didx.gleibnif.didcomm.DIDDoc

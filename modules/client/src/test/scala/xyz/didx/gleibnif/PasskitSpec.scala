@@ -3,7 +3,7 @@ import cats.data.EitherT
 import cats.effect.IO
 import cats.effect.Resource
 import cats.effect.unsafe.implicits._
-import munit.*
+import munit._
 import net.glxn.qrgen.javase.QRCode
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger

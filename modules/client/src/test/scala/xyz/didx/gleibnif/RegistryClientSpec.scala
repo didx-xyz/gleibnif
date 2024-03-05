@@ -20,7 +20,7 @@ import xyz.didx.gleibnif.didops.RegistryRequest
 import xyz.didx.gleibnif.didops.RegistryResponseCodec.encodeRegistryRequest
 import xyz.didx.gleibnif.didops.RegistryServiceClient
 import xyz.didx.gleibnif.openai.OpenAIAgent
-import xyz.didx.gleibnif.signal.*
+import xyz.didx.gleibnif.signal._
 import xyz.didx.gleibnif.signal.messages.SignalMessageCodec.memberDecoder
 import xyz.didx.gleibnif.signal.messages.SignalSimpleMessage
 
