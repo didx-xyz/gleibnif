@@ -8,7 +8,7 @@ import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 import pureconfig.ConfigReader
 import pureconfig.ConfigSource
-import pureconfig.generic.derivation.default.*
+import pureconfig.generic.derivation.default._
 
 object ConfigManager {
   given Logger[IO] = Slf4jLogger.getLogger[IO]

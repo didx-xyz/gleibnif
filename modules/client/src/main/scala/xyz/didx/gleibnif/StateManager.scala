@@ -26,7 +26,7 @@ import cats.effect.kernel.Ref
 import java.util.UUID
 import scala.collection.immutable.HashMap
 
-import didcomm.DIDTypes.*
+import didcomm.DIDTypes._
 
 trait State
 case class Context(id: String)

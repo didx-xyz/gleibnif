@@ -1,12 +1,12 @@
 package xyz.didx.gleibnif
 
 import cats.Applicative.ops.toAllApplicativeOps
-import cats.*
+import cats._
 import io.circe.Decoder
 import io.circe.Decoder.Result
 import io.circe.Encoder
 import io.circe.Json
-import io.circe.*
+import io.circe._
 
 import java.net.URI
 

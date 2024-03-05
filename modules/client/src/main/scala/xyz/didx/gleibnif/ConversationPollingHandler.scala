@@ -5,12 +5,12 @@ import cats.effect.IO
 import cats.effect.kernel.Resource
 import cats.syntax.traverse._
 import io.circe._
-import io.circe.parser.*
+import io.circe.parser._
 import io.circe.syntax._
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 import sttp.client3.SttpBackend
-import xyz.didx.gleibnif.config.ConfigReaders.*
+import xyz.didx.gleibnif.config.ConfigReaders._
 import xyz.didx.gleibnif.connection.RedisStorage
 import xyz.didx.gleibnif.didcomm.DIDDoc
 import xyz.didx.gleibnif.didcomm.Service
@@ -24,7 +24,7 @@ import xyz.didx.gleibnif.logging.LogWriter.logNonEmptyList
 import xyz.didx.gleibnif.openai.OpenAIAgent
 import xyz.didx.gleibnif.passkit.PasskitAgent
 import xyz.didx.gleibnif.signal.SignalBot
-import xyz.didx.gleibnif.signal.*
+import xyz.didx.gleibnif.signal._
 import xyz.didx.gleibnif.signal.messages.Member
 import xyz.didx.gleibnif.signal.messages.SignalMessage
 import xyz.didx.gleibnif.signal.messages.SignalMessageCodec.memberDecoder

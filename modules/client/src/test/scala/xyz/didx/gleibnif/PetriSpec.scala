@@ -1,17 +1,17 @@
 package xyz.didx.gleibnif
 import cats.data.State
-import cats.effect.*
 import cats.effect._
-import cats.syntax.all.*
+import cats.effect._
 import cats.syntax.all._
-import cats.syntax.functor.*
+import cats.syntax.all._
+import cats.syntax.functor._
 import fs2.grpc.syntax.serverBuilder
-import io.circe.*
+import io.circe._
 import io.circe.generic.auto._
-import io.circe.parser.*
+import io.circe.parser._
 import io.circe.parser.decode
-import io.circe.syntax.*
-import munit.*
+import io.circe.syntax._
+import munit._
 import org.http4s.HttpRoutes
 import org.http4s.blaze.server.BlazeServerBuilder
 import org.http4s.server.Router
@@ -20,21 +20,21 @@ import org.typelevel.log4cats.slf4j.Slf4jLogger
 import scodec.bits.Bases
 import scodec.bits.BitVector
 import scodec.bits.ByteOrdering
-import scodec.bits.*
+import scodec.bits._
 import sttp.tapir._
 import sttp.tapir.docs.openapi._
 import sttp.tapir.generic.auto._
 import sttp.tapir.json.circe._
 import sttp.tapir.server.http4s.Http4sServerInterpreter
 import sttp.tapir.swagger.bundle.SwaggerInterpreter
-import xyz.didx.castanet.*
+import xyz.didx.castanet._
 import xyz.didx.gleibnif.PetriCompiler
 
 import java.util.UUID
 import scala.collection.immutable.ListSet
 import scala.concurrent.ExecutionContext
 import scala.io.Source
-import scala.quoted.*
+import scala.quoted._
 
 object DWNContext:
   class DID(val did: String)

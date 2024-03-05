@@ -1,6 +1,6 @@
 package xyz.didx.gleibnif
 
-import cats.effect.*
+import cats.effect._
 import org.http4s.blaze.server.BlazeServerBuilder
 import org.http4s.server.Router
 

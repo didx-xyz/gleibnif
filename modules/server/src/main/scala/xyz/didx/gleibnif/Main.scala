@@ -1,8 +1,8 @@
 package xyz.didx.gleibnif
 
 import _root_.io.grpc.ForwardingServerCall.SimpleForwardingServerCall
-import _root_.io.grpc.*
-import cats.effect.*
+import _root_.io.grpc._
+import cats.effect._
 import com.google.api.http.Http
 import fs2.grpc.server.ServerOptions
 import fs2.grpc.syntax.all._
@@ -11,7 +11,7 @@ import io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 import xyz.didx.dwn.dwn_service.RecordServiceGrpc.RecordServiceStub
-import xyz.didx.dwn.dwn_service.*
+import xyz.didx.dwn.dwn_service._
 import xyz.didx.gleibnif.hook.HookImpl
 
 import scala.concurrent.Await

@@ -1,9 +1,9 @@
 package xyz.didx.gleibnif.didcomm
 
-import cats.*
-import cats.syntax.all.*
+import cats._
+import cats.syntax.all._
 import io.circe.Decoder.Result
-import io.circe.*
+import io.circe._
 import xyz.didx.gleibnif.didcomm.DIDDoc
 import xyz.didx.gleibnif.didcomm.Service
 import xyz.didx.gleibnif.didcomm.ServiceEndpoint

@@ -1,12 +1,12 @@
 package xyz.didx.gleibnif.dawn
 
-import cats.effect.*
+import cats.effect._
 import cats.effect.kernel.Resource
 import dev.profunktor.redis4cats.Redis
 import dev.profunktor.redis4cats.RedisCommands
 import xyz.didx.gleibnif.connection.RedisStorage
-import xyz.didx.gleibnif.didcomm.DIDTypes.*
-import xyz.didx.gleibnif.didcomm.*
+import xyz.didx.gleibnif.didcomm.DIDTypes._
+import xyz.didx.gleibnif.didcomm._
 
 import scala.concurrent.duration.FiniteDuration
 
