@@ -1,4 +1,4 @@
-lazy val Scala3 = "3.4.0"
+lazy val Scala3 = "3.4.1"
 
 Global / scalaVersion         := Scala3
 Global / onChangedBuildSource := ReloadOnSourceChanges
