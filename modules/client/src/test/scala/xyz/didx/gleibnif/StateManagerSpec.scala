@@ -41,12 +41,12 @@ class StateManagerTests extends CatsEffectSuite {
 
     val stateManager = StateManager.create()
     def update(sm: StateManager, i: Int): IO[Unit] =
-      for
-        _ <- IO.println(s"update $i")
-        _ <- sm.updateState("1", i.toString())
-      yield ()
+    for
+      _ <- IO.println(s"update $i")
+      _ <- sm.updateState("1", i.toString())
+    yield ()
 
-      // Run the updates concurrently
+    // Run the updates concurrently
     def updates(sm: StateManager) =
       (1 to 100).toList.map(i => update(sm, i)).parSequenceN(100)
 
