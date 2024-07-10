@@ -2,7 +2,7 @@ resolvers += Resolver.mavenLocal
 
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.5.2")
 
-addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.5.3")
+addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.5.4")
 
 addSbtPlugin("org.scalameta" % "sbt-native-image" % "0.3.4")
 
