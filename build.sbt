@@ -72,7 +72,7 @@ lazy val commonSettings = Seq(
     "org.typelevel"                 %% "cats-effect"             % ceVersion,
     "org.scodec"                    %% "scodec-bits"             % scodecVersion,
     "org.scala-lang"                %% "scala3-staging"          % Scala3,
-    "io.circe"                      %% "circe-yaml"              % "0.14.2",
+    "io.circe"                      %% "circe-yaml"              % "0.15.3",
     "xyz.didx"                      %% "castanet"                % castanetVersion,
     "org.typelevel"                 %% "cats-core"               % catsVersion,
     "org.typelevel"                 %% "cats-effect"             % ceVersion,
