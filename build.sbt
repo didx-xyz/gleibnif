@@ -53,7 +53,7 @@ lazy val shapelessVersion    = "3.4.1"
 lazy val sttpVersion         = "3.9.7"
 lazy val sttpApispecVersion  = "0.6.3"
 lazy val tapirVersion        = "1.6.4"
-lazy val tinkVersion         = "1.14.0"
+lazy val tinkVersion         = "1.14.1"
 lazy val titaniumVersion     = "1.4.1"
 lazy val xebiaVersion        = "0.0.3"
 
