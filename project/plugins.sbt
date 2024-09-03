@@ -8,7 +8,7 @@ addSbtPlugin("org.scalameta" % "sbt-native-image" % "0.3.4")
 
 addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
 
-addSbtPlugin("org.typelevel" % "sbt-fs2-grpc" % "2.7.16")
+addSbtPlugin("org.typelevel" % "sbt-fs2-grpc" % "2.7.19")
 
 addSbtPlugin("com.github.sbt" % "sbt-native-packager" % "1.10.0")
 
