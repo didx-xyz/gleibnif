@@ -28,7 +28,7 @@ lazy val root = project
       .withOverwrite(true)
   )
 
-lazy val bouncyCastleVersion = "1.78.1"
+lazy val bouncyCastleVersion = "1.79"
 lazy val castanetVersion     = "0.1.11"
 lazy val catsVersion         = "2.12.0"
 lazy val ceVersion           = "3.5.5"
