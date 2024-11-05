@@ -96,7 +96,7 @@ lazy val commonSettings = Seq(
     "com.softwaremill.sttp.client3" %% "core"                    % sttpVersion,
     "com.softwaremill.sttp.apispec" %% "apispec-model"           % sttpApispecVersion,
     "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml"      % sttpApispecVersion,
-    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.16",
+    "org.http4s"                    %% "http4s-blaze-server"     % "0.23.17",
     "org.http4s"                    %% "http4s-dsl"              % http4sVersion,
     "ch.qos.logback"                 % "logback-classic"         % logbackVersion,
     "org.scalameta"                 %% "munit"                   % munitVersion   % Test,
