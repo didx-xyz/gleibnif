@@ -55,7 +55,7 @@ lazy val sttpApispecVersion  = "0.6.3"
 lazy val tapirVersion        = "1.6.4"
 lazy val tinkVersion         = "1.14.0"
 lazy val titaniumVersion     = "1.4.1"
-lazy val xebiaVersion        = "0.0.3"
+lazy val xebiaVersion        = "0.0.4"
 
 lazy val commonSettings = Seq(
   resolvers ++= Seq(
