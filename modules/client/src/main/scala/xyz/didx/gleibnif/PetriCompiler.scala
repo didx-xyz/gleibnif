@@ -308,7 +308,9 @@ case class PetriCompiler[F[_]](interfaceName: String)(using
     placeParams
       .map { p =>
         val params: (String, String) =
-          (dashToCapitalize(p._1) -> s"${dashToCamelCase(p._2).map(s => s"$s: String").mkString(", ")}")
+          (dashToCapitalize(
+            p._1
+          ) -> s"${dashToCamelCase(p._2).map(s => s"$s: String").mkString(", ")}")
         val chatBotCode =
           s"""
         |package xyz.didx.gleibnif
