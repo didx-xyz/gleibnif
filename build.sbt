@@ -30,7 +30,7 @@ lazy val root = project
 
 lazy val bouncyCastleVersion = "1.79"
 lazy val castanetVersion     = "0.1.11"
-lazy val catsVersion         = "2.12.0"
+lazy val catsVersion         = "2.13.0"
 lazy val ceVersion           = "3.5.5"
 lazy val circeVersion        = "0.14.10"
 lazy val didCommVersion      = "0.3.2"
