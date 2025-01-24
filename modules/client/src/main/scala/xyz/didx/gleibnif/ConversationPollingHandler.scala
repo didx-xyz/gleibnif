@@ -92,8 +92,7 @@ class ConversationPollingHandler(using logger: Logger[IO]):
               signalConf.signalPhone,
               List(k.phone)
             )
-          )
-      )
+          ))
     }
 
     (for
