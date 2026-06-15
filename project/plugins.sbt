@@ -4,7 +4,7 @@ addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.5.2")
 
 addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.5.4")
 
-addSbtPlugin("org.scalameta" % "sbt-native-image" % "0.3.4")
+addSbtPlugin("org.scalameta" % "sbt-native-image" % "0.5.0")
 
 addSbtPlugin("com.github.sbt" % "sbt-pgp" % "2.2.1")
 
